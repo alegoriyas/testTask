@@ -1,81 +1,193 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
 
 @font-face {
-  font-family: "Conv_Lato-Regular";
-  src: url("fonts/Lato-Regular.eot");
-  src: local("☺"), url("fonts/Lato-Regular.woff") format("woff"),
-    url("fonts/Lato-Regular.ttf") format("truetype"),
-    url("fonts/Lato-Regular.svg") format("svg");
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.eot");
+  src: local("☺"), url("../fonts/Lato-Regular.woff") format("woff"),
+    url("../fonts/Lato-Regular.ttf") format("truetype"),
+    url("../fonts/Lato-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Conv_Lato-Bold";
-  src: url("fonts/Lato-Bold.eot");
-  src: local("☺"), url("fonts/Lato-Bold.woff") format("woff"),
-    url("fonts/Lato-Bold.ttf") format("truetype"),
-    url("fonts/Lato-Bold.svg") format("svg");
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.eot");
+  src: local("☺"), url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.ttf") format("truetype"),
+    url("../fonts/Lato-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Conv_Lato-Black";
-  src: url("fonts/Lato-Black.eot");
-  src: local("☺"), url("fonts/Lato-Black.woff") format("woff"),
-    url("fonts/Lato-Black.ttf") format("truetype"),
-    url("fonts/Lato-Black.svg") format("svg");
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.eot");
+  src: local("☺"), url("../fonts/Lato-Black.woff") format("woff"),
+    url("../fonts/Lato-Black.ttf") format("truetype"),
+    url("../fonts/Lato-Black.svg") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+nav,
+footer,
+header,
+section {
+  display: block;
 }
 
 html,
 body {
-  background-color: #e5e5e5;
+  color: #e5e5e5;
+  height: 100%;
+  min-width: 320px;
 }
 
 body {
+  font-family: "Merriweather", serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0px 15px;
+  width: 100%;
+  display: flex;
+  background-color: darkgreen;
+}
+
+@media (max-width: 962px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #1c242a;
+  margin: 22px 0 31px 0;
   padding: 0;
+}
+
+.top-line {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-line-info {
+  justify-content: flex-end;
+}
+
+.top-line-info__text {
+  display: inline-block;
+  height: 18px;
+  color: #000;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
   margin: 0;
+  padding: 0 40px 0 0;
+  background-color: rgb(216, 241, 122);
 }
 
-.navbar {
-  margin-top: 22px;
+.top-line-menu {
+  @include flexbox();
+}
+/*position: fixed;
+  width: 100%;
+  left: 0;
+  top: 70px;
+  padding: 22px 0;
   height: 60px;
-  width: 1110px;
-  background: #e5e5e5;
-}
+  background-color: #c21515;
+  justify-content: flex-end;
+}*/
 
-.navbar-brand {
+.top-line-menu-logo {
+  margin-top: 33px;
   font-family: "Merriweather", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 50px;
   color: #005fa3;
-  cursor: pointer;
+  background-color: brown;
 }
 
-.nav-link {
-  cursor: pointer;
+nav.top-line-menu-nav {
+  background-color: chartreuse;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.top-line-menu__link {
+  margin-right: 1em !important;
+}
+
+.top-line-menu__link:hover {
+  background: #e5e5e5;
+  color: #005fa3;
+}
+
+ul.top-line-menu-nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+ul.top-line-menu-nav-list li {
+  margin: 0;
+  padding: 0 68px 0 0;
+  display: inline-block;
+  text-transform: uppercase;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #222;
-}
-
-.nav-link {
-  margin-right: 1em !important;
-}
-
-.nav-link:hover {
-  background: #e5e5e5;
-  color: #005fa3;
 }
 
 .navbar-collapse {
@@ -86,7 +198,7 @@ body {
   background: #e5e5e5 !important;
 }
 
-.header {
+.main {
   position: relative;
   background-image: url("../img/first_screen.jpg");
   background-size: cover;

@@ -5,89 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>BuhOne landing page</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/bs4custom.css" />
+    
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <span class="navbar-brand logo">
-        <img
-          src="img/logo.png"
-          width="40"
-          height="40"
-          class="d-inline-block align-top"
-          alt="logo"
-        />
-        BuhOne
-      </span>
 
-      <!-- Toggler/collapsibe Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav mr-4">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">услуги</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">кейсы</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">о компании</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <header class="header">
-      <div class="overlay"></div>
-
-      <div class="container">
-        <div class="row justify-content-start">
-          <div class="first-screen col-12">
-            <h1>Бухгалтерские услуги в Санкт-Петербурге</h1>
-            <button class="btn btn-outline-secondary btn-lg">
-              Наша презентация
-            </button>
+   <body>
+     <header class="header">
+       <div class="container">
+         <div class="top-line">
+           <div class="top-line-info">
+             <span class="top-line-info__text"><img
+                src="../img/hdr_phone.png"
+                width="10"
+                height="18"
+                alt="logo"
+              />8 (111) 222-33-44</span>
+              <span class="top-line-info__text"><img
+                src="../img/hdr_time.png"
+                width="17"
+                height="17"
+                alt="logo"
+              />Пн-Пт 10:00-18:00</span>
+              <span class="top-line-info__text"><img
+                src="../img/hdr_email.png"
+                width="23"
+                height="17"
+                alt="logo"
+              />order@buhone.ru</span>
+              <span class="top-line-info__text"><img
+                src="../img/hdr_place.png"
+                width="17"
+                height="17"
+                alt="logo"
+              />Невский пр. 130</span>
+           </div>
+         </div>  
+         <div class="top-line-menu">
+            <div class="top-line-menu__column">
+              <a class="top-line-menu-logo" href="#">
+              <img
+                src="../img/logo.png"
+                width="40"
+                height="40"
+                class="d-inline-block align-top"
+                alt="logo"
+              />
+              BuhOne
+              </a>
+            </div>
+             
+            <div class="top-line-menu__column">
+              <nav class="top-line-menu-nav">
+                <ul class="top-line-menu-nav-list">
+                  <li class="top-line-menu__link">
+                    <a href="#">Главная</a>
+                  </li>
+                  <li class="top-line-menu__link">
+                    <a href="#">услуги</a>
+                  </li>
+                  <li class="top-line-menu__link">
+                    <a href="#">кейсы</a>
+                  </li>
+                  <li class="top-line-menu__link">
+                    <a href="#">о компании</a>
+                  </li>
+                  <li class="top-line-menu__link">
+                    <a href="#">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            
           </div>
         </div>
       </div>
     </header>
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <main class="main">
+      <div class="overlay"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="first-screen">
+            <h1>Бухгалтерские услуги в Санкт-Петербурге</h1>
+            <button>
+              Наша презентация
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
   </body>
 </html>
