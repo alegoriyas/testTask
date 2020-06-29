@@ -130,9 +130,7 @@ img {
   background-color: rgb(216, 241, 122);
 }
 
-.top-line-menu {
-  @include flexbox();
-}
+
 /*position: fixed;
   width: 100%;
   left: 0;
